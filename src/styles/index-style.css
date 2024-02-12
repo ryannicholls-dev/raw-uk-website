@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neon-green: #33ff00;
+}
+
+@font-face {
+    font-family: 'RawFont';
+    src: url('../../Assets/acumin-pro-extra-condensed-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+h1 {
+    font-family: 'RawFont', sans-serif !important;
+}
+
+/* Navbar Styling */
+
+.navbar-custom {
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Hero Seciton Styling */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* background image */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+}
+
+/* logo png */
+.bg-img {
+    background-image: url('../../Assets/logo_with_background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 70%;
+    box-shadow: 0 0 50px 30px black inset;
+    height: 100%;
+    width: 100%;
+}
+
+.hero h1,
+.hero p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5rem;
+}
+
+.hero p {
+    font-family: 'RawFont', sans-serif !important;
+    font-size: 2rem;
+    top: 80%;
+    color: white;
+    transition: color 0.5s ease-out;
+}
+
+.hero p a {
+    color: white;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s ease-out;
+}
+
+
+.scroll-text a:hover {
+    color: var(--neon-green);
+    transition: color 0.5s ease;
+}
+
+/* About Section Styling */
+
+.about {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.sign-up-form {
+    width: 50%;
+}
+
+/* Scroll text */
+
+.news-ticker-container {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: black;    
+}
+
+.news-ticker,
+.news-ticker-2 {
+    font-family: 'RawFont', sans-serif !important;
+    font-size: 2rem;
+    color: var(--neon-green);
+    opacity: 0.5;
+    position: fixed;
+    bottom: 5%;
+}
+
+.news-ticker span {
+    display: inline-block;
+    /* padding-left: 100%; */
+    animation: marquee 120s linear infinite;
+}
+
+.news-ticker-2 span {
+    animation: marquee 240s linear infinite;
+    animation-delay: 1s;
+    padding-left: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .hero, .hero h1, .scroll-text {
+        padding-bottom: 200px;
+    }
+    .hero h1, .about h1 {
+        font-size: 2.5rem; /* Adjust this value as needed */
+        white-space: nowrap;
+    }
+    .hero p {
+        font-size: 1em;
+        white-space: nowrap;
+    }
+    .news-ticker, .news-ticker-2 {
+        font-size: 1rem;
+    }
+
+}
