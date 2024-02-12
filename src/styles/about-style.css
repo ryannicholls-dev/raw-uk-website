@@ -4,7 +4,8 @@
     0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0.3;
     }
 }
@@ -13,15 +14,18 @@
     0% {
         opacity: 0.3;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
+
 @keyframes revealTimeline {
     0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -30,9 +34,14 @@
     0% {
         opacity: 0.3;
     }
-    100%{
+
+    100% {
         opacity: 2;
     }
+}
+
+.about {
+    position: relative;
 }
 
 .scroll-tracker {
@@ -61,7 +70,8 @@
     text-align: center;
 }
 
-.about > .tunnels, .palmhouse {
+.about>.tunnels,
+.palmhouse {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -71,20 +81,55 @@
     background-color: black;
 }
 
+.dates-container {
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    opacity: 0;
+}
+
+.dates {
+    font-family: 'RawFont', sans-serif !important;
+    font-size: 2rem;
+}
+
+.dates ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    color: var(--neon-green);
+    background-color: transparent;
+    padding: 0 6rem;
+}
+
+.dates ul li {
+    list-style: none;
+}
 
 @media screen and (max-width: 800px) {
-    .hero, .hero h1, .scroll-text {
+
+    .hero,
+    .hero h1,
+    .scroll-text {
         padding-bottom: 200px;
     }
-    .hero h1, .about h1 {
-        font-size: 2.5rem; /* Adjust this value as needed */
+
+    .hero h1,
+    .about h1 {
+        font-size: 2.5rem;
+        /* Adjust this value as needed */
         white-space: nowrap;
     }
+
     .hero p {
         font-size: 1em;
         white-space: nowrap;
     }
-    .news-ticker, .news-ticker-2 {
+
+    .news-ticker,
+    .news-ticker-2 {
         font-size: 1rem;
     }
 
