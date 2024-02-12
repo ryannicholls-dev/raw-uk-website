@@ -19,7 +19,6 @@
     0% {
         transform: translate(0, 0);
     }
-
     100% {
         transform: translate(-100%, 0);
     }
@@ -100,30 +99,11 @@ h1 {
     transition: color 0.5s ease-out;
 }
 
-
 .scroll-text a:hover {
     color: var(--neon-green);
     transition: color 0.5s ease;
 }
 
-/* About Section Styling */
-
-.about {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about h1 {
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-}
 
 .sign-up-form {
     width: 50%;
