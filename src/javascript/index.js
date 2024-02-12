@@ -25,6 +25,8 @@ const controller = new ScrollMagic.Controller();
 
 const logoAnim = TweenMax.fromTo(image, 1.5, { opacity: 1 }, { opacity: 0 });
 const textAnim = TweenMax.fromTo(headline, 1.5, { opacity: 1 }, { opacity: 0 });
+const tickerAnimHide = TweenMax.fromTo(ticker, 1.5, { visibility: 'visible' }, { visibility: 'hidden' });
+const tickerAnimFade = TweenMax.fromTo(ticker, 1.5, { opacity: 1 }, { opacity: 0 });
 
 //SCENES
 let logoScene = new ScrollMagic.Scene({
@@ -42,4 +44,20 @@ let textScene = new ScrollMagic.Scene({
   triggerHook: 0
 })
 .setTween(textAnim)
+.addTo(controller);
+
+let tickerFadeScene = new ScrollMagic.Scene({
+  duration: 500, 
+  triggerElement: hero,
+  triggerHook: 0
+})
+.setTween(tickerAnimFade)
+.addTo(controller);
+
+let tickerScene = new ScrollMagic.Scene({
+  duration: 500, 
+  triggerElement: image,
+  triggerHook: 0
+})
+.setTween(tickerAnimHide)
 .addTo(controller);
