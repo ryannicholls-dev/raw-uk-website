@@ -12,7 +12,7 @@ const tl = new TimelineMax();
 const timelineScene = new ScrollMagic.Scene({
     duration: 6000,
     triggerElement: about,
-    triggerHook: 0
+    triggerHook: 0.5
 })
 .setTween(timelineAnim)
 .addTo(controller);
