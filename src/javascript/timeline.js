@@ -22,7 +22,7 @@ const timelineScene = new ScrollMagic.Scene({
 .addTo(controller);
 
 const tunnelImgScene = new ScrollMagic.Scene({
-    duration: 500,
+    duration: 1000,
     triggerElement: about,
     triggerHook: 0.5
 })
