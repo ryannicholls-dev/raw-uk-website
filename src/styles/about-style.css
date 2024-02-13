@@ -108,6 +108,18 @@
     list-style: none;
 }
 
+.tunnel-img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    position: relative;
+}
+
+.tunnels h1 {
+    position: absolute;
+}
+
 @media screen and (max-width: 800px) {
 
     .hero,
