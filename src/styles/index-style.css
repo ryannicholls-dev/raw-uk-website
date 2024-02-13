@@ -1,3 +1,15 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'RawFont';
+    src: url('../../Assets/acumin-pro-extra-condensed-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +18,6 @@
 
 :root {
     --neon-green: #33ff00;
-}
-
-@font-face {
-    font-family: 'RawFont';
-    src: url('../../Assets/acumin-pro-extra-condensed-bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @keyframes marquee {
@@ -40,6 +45,9 @@ h1 {
 
 .navbar-custom .navbar-nav .nav-link {
     color: white;
+    font-family: 'Inria Sans';
+    letter-spacing: 0.2rem;
+    padding-left: 3rem;
 }
 
 /* Hero Seciton Styling */
