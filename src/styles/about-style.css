@@ -210,6 +210,7 @@
     display: flex;
     gap: 20px;
     background-color: black;
+    border-radius: 20px;
 }
 
 .thumbnail .item {
@@ -268,7 +269,7 @@
     transition: .5s;
 }
 
-.arrows button:hover{
+.arrows button:hover {
     background-color: white;
     color: #555;
     cursor: pointer;
