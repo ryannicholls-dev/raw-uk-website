@@ -1,15 +1,11 @@
 const scrollTracker = document.querySelector('.scroll-tracker');
 const scrollTrackerBackground = document.querySelector('.scroll-tracker-background');
 const timelineDates = document.querySelector('.dates-container');
-const tunnelImg1 = document.querySelector('.tunnel-img-1');
-
 
 const about = document.querySelector('.about');
 
 const controller = new ScrollMagic.Controller();
 const timelineAnim = TweenMax.fromTo(scrollTracker, 1, { transform: "scaleX(0)" }, { transform: "scaleX(1)" } );
-const tunnelImgAnim = TweenMax.fromTo(tunnelImg1, 1, { opacity: 0 }, { opacity: 0.3 });
-
 
 const tl = new TimelineMax();
 
@@ -20,15 +16,6 @@ const timelineScene = new ScrollMagic.Scene({
 })
 .setTween(timelineAnim)
 .addTo(controller);
-
-const tunnelImgScene = new ScrollMagic.Scene({
-    duration: 1000,
-    triggerElement: about,
-    triggerHook: 0.5
-})
-.setTween(tunnelImgAnim)
-.addTo(controller);
-
 
 
 //Show the overall timeline and timeline background
