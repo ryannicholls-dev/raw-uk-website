@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'RawFont';
-    src: url('../../Assets/acumin-pro-extra-condensed-bold.otf') format('opentype');
+    src: url('../../assets/acumin-pro-extra-condensed-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -79,7 +79,7 @@ h1 {
 
 /* logo png */
 .bg-img {
-    background-image: url('../../Assets/logo_with_background.jpeg');
+    background-image: url('../../assets/logo_with_background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 70%;
