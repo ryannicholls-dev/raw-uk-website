@@ -37,6 +37,7 @@ h1 {
 
 .navbar-custom {
     background-color: transparent;
+    z-index: 100;
 }
 
 .navbar-custom .navbar-brand {
@@ -48,6 +49,11 @@ h1 {
     font-family: 'Inria Sans';
     letter-spacing: 0.2rem;
     padding-left: 3rem;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover{
+    color: var(--neon-green);
+    transition: 0.5s;
 }
 
 /* Hero Seciton Styling */
