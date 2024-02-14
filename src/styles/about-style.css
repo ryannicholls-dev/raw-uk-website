@@ -209,8 +209,7 @@
     z-index: 100;
     display: flex;
     gap: 20px;
-    background-color: black;
-    border-radius: 20px;
+    opacity: 0.9;
 }
 
 .thumbnail .item {
