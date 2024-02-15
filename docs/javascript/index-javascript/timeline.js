@@ -2,7 +2,7 @@ const scrollTracker = document.querySelector('.scroll-tracker');
 const scrollTrackerBackground = document.querySelector('.scroll-tracker-background');
 const timelineDates = document.querySelector('.dates-container');
 
-const about = document.querySelector('.about');
+const tunnels = document.querySelector('.tunnels');
 
 const controller = new ScrollMagic.Controller();
 const timelineAnim = TweenMax.fromTo(scrollTracker, 1, { transform: "scaleX(0)" }, { transform: "scaleX(1)" } );
@@ -11,7 +11,7 @@ const tl = new TimelineMax();
 
 const timelineScene = new ScrollMagic.Scene({
     duration: 6000,
-    triggerElement: about,
+    triggerElement: tunnels,
     triggerHook: 0.10
 })
 .setTween(timelineAnim)
@@ -21,10 +21,10 @@ const timelineScene = new ScrollMagic.Scene({
 //Show the overall timeline and timeline background
 document.addEventListener('scroll', function(){
     const clientHeight = document.documentElement.clientHeight;
-    const aboutSectionY = about.getBoundingClientRect().y;
+    const tunnelsSectionY = tunnels.getBoundingClientRect().y;
     const clientThreeQuarter = clientHeight * 0.10;
 
-    if (clientThreeQuarter > aboutSectionY) {
+    if (clientThreeQuarter > tunnelsSectionY) {
         // console.log(clientHeight);
         scrollTracker.style.animation = 'revealTimeline 0.5s linear';
         scrollTrackerBackground.style.animation = 'revealTimelineBackground 0.2s linear';

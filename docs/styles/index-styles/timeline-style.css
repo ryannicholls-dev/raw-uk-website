@@ -1,0 +1,60 @@
+/* Timeline CSS */
+
+.scroll-tracker {
+    height: 0.1rem;
+    width: 100%;
+    max-width: inherit;
+    background-color: var(--neon-green);
+    position: fixed;
+    top: 4rem;
+    transform-origin: left;
+    z-index: 100;
+}
+
+.scroll-tracker-background {
+    height: 0.1rem;
+    width: 100%;
+    max-width: inherit;
+    background-color: var(--neon-green);
+    position: fixed;
+    top: 4rem;
+    transform-origin: left;
+    opacity: 0;
+    z-index: 100;
+    /* animation: revealTimeline 1s 1 linear ; */
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.dates-container {
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    max-width: inherit;
+    opacity: 0;
+    z-index: 100;
+}
+
+.dates {
+    font-family: 'RawFont', sans-serif !important;
+    font-size: 2rem;
+}
+
+.dates ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    color: var(--neon-green);
+    background-color: transparent;
+    padding: 0 6rem;
+}
+
+.dates ul li {
+    list-style: none;
+}

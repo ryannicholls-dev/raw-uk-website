@@ -49,7 +49,7 @@
 
 /* About section */
 
-.about {
+.tunnels {
     width: 100%;
     max-width: var(--max-width);
     height: 100vh;
@@ -61,78 +61,6 @@
     justify-content: center;
 }
 
-/* .about>.tunnels,
-.palmhouse {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-} */
-
-/* Timeline CSS */
-
-.scroll-tracker {
-    height: 0.1rem;
-    width: 100%;
-    max-width: inherit;
-    background-color: var(--neon-green);
-    position: fixed;
-    top: 4rem;
-    transform-origin: left;
-    z-index: 100;
-}
-
-.scroll-tracker-background {
-    height: 0.1rem;
-    width: 100%;
-    max-width: inherit;
-    background-color: var(--neon-green);
-    position: fixed;
-    top: 4rem;
-    transform-origin: left;
-    opacity: 0;
-    z-index: 100;
-    /* animation: revealTimeline 1s 1 linear ; */
-}
-
-.about h1 {
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-}
-
-.dates-container {
-    position: fixed;
-    top: 5rem;
-    width: 100%;
-    max-width: inherit;
-    opacity: 0;
-    z-index: 100;
-}
-
-.dates {
-    font-family: 'RawFont', sans-serif !important;
-    font-size: 2rem;
-}
-
-.dates ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    color: var(--neon-green);
-    background-color: transparent;
-    padding: 0 6rem;
-}
-
-.dates ul li {
-    list-style: none;
-}
-
 @media screen and (max-width: 800px) {
 
     .hero,
@@ -142,7 +70,7 @@
     }
 
     .hero h1,
-    .about h1 {
+    .tunnels h1 {
         font-size: 2.5rem;
         /* Adjust this value as needed */
         white-space: nowrap;
