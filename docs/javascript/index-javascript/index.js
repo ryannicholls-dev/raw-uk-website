@@ -34,6 +34,7 @@ let logoScene = new ScrollMagic.Scene({
   triggerElement: hero,
   triggerHook: 0
 })
+.setPin(hero)
 .setTween(logoAnim)
 .addTo(controller);
 
