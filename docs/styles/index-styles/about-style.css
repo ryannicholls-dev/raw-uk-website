@@ -50,10 +50,18 @@
 /* About section */
 
 .about {
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    background-color: black;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.about>.tunnels,
+/* .about>.tunnels,
 .palmhouse {
     height: 100vh;
     width: 100%;
@@ -62,13 +70,14 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    }
+} */
 
 /* Timeline CSS */
 
 .scroll-tracker {
     height: 0.1rem;
     width: 100%;
+    max-width: inherit;
     background-color: var(--neon-green);
     position: fixed;
     top: 4rem;
@@ -79,6 +88,7 @@
 .scroll-tracker-background {
     height: 0.1rem;
     width: 100%;
+    max-width: inherit;
     background-color: var(--neon-green);
     position: fixed;
     top: 4rem;
@@ -98,6 +108,7 @@
     position: fixed;
     top: 5rem;
     width: 100%;
+    max-width: inherit;
     opacity: 0;
     z-index: 100;
 }
