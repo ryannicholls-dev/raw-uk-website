@@ -34,10 +34,8 @@ function showSlider(carouselType, type) {
     let thumbnailSelector = `${carouselSelector} .thumbnail .item`;
     let thumbnailItemsDom = document.querySelectorAll(thumbnailSelector);
     let SliderItemsDom = SliderDom.querySelectorAll(`${carouselSelector} .list .item`);
-    
     let thumbnailBorderDom = document.querySelector(`${carouselSelector} .thumbnail`);
-
-    carouselDom = document.querySelector(`${carouselSelector}`);
+    let carouselDom = document.querySelector(`${carouselSelector}`);
 
     if (type === 'next') {
         SliderDom.appendChild(SliderItemsDom[0]);
