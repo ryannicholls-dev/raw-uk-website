@@ -19,10 +19,10 @@ nextDom.onclick = function(){
 prevDom.onclick = function(){
     showSlider('prev');    
 }
-let runTimeOut;
-let runNextAuto = setTimeout(() => {
-    next.click();
-}, timeAutoNext)
+// let runTimeOut;
+// let runNextAuto = setTimeout(() => {
+//     next.click();
+// }, timeAutoNext)
 function showSlider(type){
     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
@@ -42,8 +42,9 @@ function showSlider(type){
         carouselDom.classList.remove('prev');
     }, timeRunning);
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext)
+    // Auto scroll
+    // clearTimeout(runNextAuto);
+    // runNextAuto = setTimeout(() => {
+    //     next.click();
+    // }, timeAutoNext)
 }
