@@ -83,14 +83,6 @@ h1 {
     align-items: center;
 }
 
-/* background image */
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 70%;
-}
-
 /* logo png */
 .bg-img {
     background-image: url('../../assets/logo_with_background.jpeg');
@@ -98,8 +90,10 @@ h1 {
     background-size: cover;
     background-position: center 70%;
     box-shadow: 0 0 50px 30px black inset;
-    height: 100%;
+    height: 70%;
     width: 100%;
+    object-fit: cover;
+    object-position: center 70%;
 }
 
 .hero h1,

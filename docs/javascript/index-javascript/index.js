@@ -12,6 +12,13 @@ const ticker = document.querySelector('.news-ticker-container');
 
 const tl = new TimelineMax();
 
+// tl
+//   .fromTo(headline, 0.5, {visibility: "hidden"}, {visibility: "visible"}, "-=1")
+//   .fromTo(navBar, 1, { opacity: 0 }, { opacity: 1 }, "-=0.5")
+//   .fromTo(ticker, 3, { opacity: 0 }, { opacity: 1 }, "-=1")
+//   .fromTo(headline, 1, { opacity: 0 }, { opacity: 1 }, "-=3")
+//   .fromTo(scrollText, 1.5, { opacity: 0 }, { opacity: 1 },"-=2");
+
 tl.fromTo(image, 1, { height: "0%"}, {height: imageHeight, ease: Power2.easeInOut }).delay(0.5)
   .fromTo(image, 1.2, { width: "100%"}, { width: imageWidth, ease: Power2.easeInOut})
   .fromTo(headline, 0.5, {visibility: "hidden"}, {visibility: "visible"}, "-=1")
@@ -34,7 +41,6 @@ let logoScene = new ScrollMagic.Scene({
   triggerElement: hero,
   triggerHook: 0
 })
-.setPin(hero)
 .setTween(logoAnim)
 .addTo(controller);
 
