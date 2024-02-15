@@ -8,7 +8,7 @@ let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
-thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+// thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 1000;
 let timeAutoNext = 7000;
 
@@ -20,9 +20,9 @@ prevDom.onclick = function(){
     showSlider('prev');    
 }
 let runTimeOut;
-// let runNextAuto = setTimeout(() => {
-//     next.click();
-// }, timeAutoNext)
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext)
 function showSlider(type){
     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
@@ -42,9 +42,8 @@ function showSlider(type){
         carouselDom.classList.remove('prev');
     }, timeRunning);
 
-    // Auto scroll
-    // clearTimeout(runNextAuto);
-    // runNextAuto = setTimeout(() => {
-    //     next.click();
-    // }, timeAutoNext)
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
 }
