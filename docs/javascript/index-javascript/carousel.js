@@ -45,8 +45,9 @@ function showSlider(type){
         carouselDom.classList.remove('prev');
     }, timeRunning);
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext)
+    // Uncomment for auto scroll
+    // clearTimeout(runNextAuto);
+    // runNextAuto = setTimeout(() => {
+    //     next.click();
+    // }, timeAutoNext)
 }
