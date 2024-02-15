@@ -10,7 +10,7 @@ const timelineAnim = TweenMax.fromTo(scrollTracker, 1, { transform: "scaleX(0)" 
 const tl = new TimelineMax();
 
 const timelineScene = new ScrollMagic.Scene({
-    duration: 6000,
+    duration: 5500,
     triggerElement: tunnels,
     triggerHook: 0.10
 })
