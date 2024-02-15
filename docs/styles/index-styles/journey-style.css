@@ -7,49 +7,9 @@
     font-style: normal;
 }
 
-@keyframes revealTimelineBackground {
-    0% {
-        opacity: 0;
-    }
+/* Journey sections */
 
-    100% {
-        opacity: 0.3;
-    }
-}
-
-@keyframes hideTimelineBackground {
-    0% {
-        opacity: 0.3;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes revealTimeline {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes hideTimeline {
-    0% {
-        opacity: 0.3;
-    }
-
-    100% {
-        opacity: 2;
-    }
-}
-
-/* About section */
-
-.tunnels {
+.journey {
     width: 100%;
     max-width: var(--max-width);
     height: 100vh;
