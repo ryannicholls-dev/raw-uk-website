@@ -19,7 +19,7 @@ nextDom.onclick = function(){
 prevDom.onclick = function(){
     showSlider('prev');    
 }
-// let runTimeOut;
+let runTimeOut;
 // let runNextAuto = setTimeout(() => {
 //     next.click();
 // }, timeAutoNext)
