@@ -305,12 +305,12 @@
 .carousel.prev .list .item:nth-child(2) .content .description,
 .carousel.prev .list .item:nth-child(2) .content .buttons
 {
-    animation: contentOut 1.5s linear 1 forwards!important;
+    animation: contentOut 0.25s linear 1 forwards!important;
 }
 
 @keyframes contentOut{
     to{
-        transform: translateY(-150px);
+        transform: translateY(150px);
         filter: blur(20px);
         opacity: 0;
     }
