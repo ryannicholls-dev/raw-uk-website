@@ -276,7 +276,7 @@
 }
 
 .carousel.prev .list .item:nth-child(2) img{
-    animation: outFrame 0.5s linear 1 forwards;
+    animation: outFrame 0.25s linear 1 forwards;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -294,7 +294,7 @@
 .carousel.prev .thumbnail .item:nth-child(1){
     overflow: hidden;
     opacity: 0;
-    animation: showThumbnail .5s linear 1 forwards;
+    animation: showThumbnail .25s linear 1 forwards;
 }
 .carousel.next .arrows button,
 .carousel.prev .arrows button{
@@ -305,7 +305,7 @@
 .carousel.prev .list .item:nth-child(2) .content .description,
 .carousel.prev .list .item:nth-child(2) .content .buttons
 {
-    animation: contentOut 0.25s linear 1 forwards!important;
+    animation: contentOut 0.1s linear 1 forwards!important;
 }
 
 @keyframes contentOut{
