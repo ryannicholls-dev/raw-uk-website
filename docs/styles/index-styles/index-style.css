@@ -20,6 +20,20 @@
     --neon-green: #33ff00;
 }
 
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: 500;
+}
+
+.navbar-custom {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 @keyframes marquee {
     0% {
         transform: translate(0, 0);
