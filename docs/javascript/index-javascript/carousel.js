@@ -1,24 +1,44 @@
 //step 1: get DOM
-let nextDom = document.getElementById('next');
-let prevDom = document.getElementById('prev');
+let tunnelNext = document.getElementById('tunnel next');
+let tunnelPrev = document.getElementById('tunnel prev');
+
+let palmNext = document.getElementById('palm next');
+let palmPrev = document.getElementById('palm prev');
 
 let carouselDom = document.querySelector('.carousel');
 let SliderDom = carouselDom.querySelector('.carousel .list');
 let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let thumbnailItemsDom;
 let timeDom = document.querySelector('.carousel .time');
 
-// thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+//thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 1000;
 let timeAutoNext = 7000;
 
-nextDom.onclick = function(){
+tunnelNext.onclick = function(){
+    carouselDom = document.querySelector('.carousel.tunnel');
+    SliderDom = carouselDom.querySelector('.carousel.tunnel .list');
+    thumbnailItemsDom = document.querySelectorAll('.carousel.tunnel .thumbnail .item');
     showSlider('next');    
 }
 
-prevDom.onclick = function(){
+tunnelPrev.onclick = function(){
+    carouselDom = document.querySelector('.carousel.tunnel');
+    SliderDom = carouselDom.querySelector('.carousel.tunnel .list');
+    thumbnailItemsDom = document.querySelector('.carousel.tunnel .thumbnail .item');
+    thumbnailBorderDom = document.querySelector('.carousel.tunnel .thumbnail');
     showSlider('prev');    
 }
+
+palmNext.onclick = function(){
+    carouselDom = document.querySelector('.carousel.palm');
+    SliderDom = carouselDom.querySelector('.carousel.palm .list');
+    thumbnailItemsDom = document.querySelectorAll('.carousel.palm .thumbnail .item');
+    showSlider('next');    
+}
+
+
+
 let runTimeOut;
 
 // Uncomment for auto scroll
@@ -27,8 +47,8 @@ let runTimeOut;
 // }, timeAutoNext)
 
 function showSlider(type){
-    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
     
     if(type === 'next'){
         SliderDom.appendChild(SliderItemsDom[0]);
