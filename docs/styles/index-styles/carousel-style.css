@@ -164,6 +164,7 @@
     bottom: 0;
     left: 0;
 }
+
 @keyframes outFrame{
     to{
         width: 150px;
@@ -347,4 +348,14 @@
         flex-shrink: 0;
         position: relative;
     }
+    @keyframes outFrame{
+        to{
+            width: 112.5px;
+            height: 165px;
+            bottom: 50px;
+            left: 50%;
+            border-radius: 20px;
+        }
+    }
+    
 }
