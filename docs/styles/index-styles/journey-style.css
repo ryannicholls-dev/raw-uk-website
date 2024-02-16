@@ -20,30 +20,3 @@
     align-items: center;
     justify-content: center;
 }
-
-@media screen and (max-width: 800px) {
-
-    .hero,
-    .hero h1,
-    .scroll-text {
-        padding-bottom: 200px;
-    }
-
-    .hero h1,
-    .tunnels h1 {
-        font-size: 2.5rem;
-        /* Adjust this value as needed */
-        white-space: nowrap;
-    }
-
-    .hero p {
-        font-size: 1em;
-        white-space: nowrap;
-    }
-
-    .news-ticker,
-    .news-ticker-2 {
-        font-size: 1rem;
-    }
-
-}

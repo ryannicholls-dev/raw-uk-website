@@ -1,3 +1,5 @@
+const isMobileDevice = window.innerWidth <= 768; // Example threshold for mobile devices
+
 const scrollTracker = document.querySelector('.scroll-tracker');
 const scrollTrackerBackground = document.querySelector('.scroll-tracker-background');
 const timelineDates = document.querySelector('.dates-container');
@@ -8,9 +10,10 @@ const controller = new ScrollMagic.Controller();
 const timelineAnim = TweenMax.fromTo(scrollTracker, 1, { transform: "scaleX(0)" }, { transform: "scaleX(1)" } );
 
 const tl = new TimelineMax();
+let timelineDuration = isMobileDevice ? 4300 : 5500;
 
 const timelineScene = new ScrollMagic.Scene({
-    duration: 5500,
+    duration: timelineDuration,
     triggerElement: tunnels,
     triggerHook: 0.10
 })

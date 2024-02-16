@@ -42,8 +42,6 @@
 }
 
 .carousel .list .item .title {
-    font-family: 'Inria Sans';
-    letter-spacing: 0.5rem;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -314,7 +312,8 @@
         opacity: 0;
     }
 }
-@media screen and (max-width: 678px) {
+
+@media screen and (max-width: 800px) {
     .carousel .list .item .content{
         padding-right: 0;
     }
@@ -327,5 +326,25 @@
     }
     .carousel .list .item .content .buttons button {
         font-size: 0.8rem;
+        height: 2rem;
+    }
+    .carousel .list .item .content .buttons button:nth-child(1) {
+        font-size: 0.8rem;
+        color: black;
+    }
+    .carousel .list .item .chapter {
+        font-size: 0.5rem;
+    }
+    .carousel .list .item .title h1{
+        font-size: 2rem;
+    }
+    .carousel .list .item .description {
+        font-size: 0.7rem;
+    }
+    .thumbnail .item {
+        width: 112.5px;
+        height: 165px;
+        flex-shrink: 0;
+        position: relative;
     }
 }
