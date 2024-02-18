@@ -9,14 +9,12 @@
 
 /* Journey sections */
 
-/* .sections-container {
-    position: relative;
+.sections-container {
     width: 100%;
     height: 100vh;
-    scroll-behavior: smooth;
     overflow: auto;
     scroll-snap-type: y mandatory;
-} */
+}
 
 .journey {
     width: 100%;
@@ -28,5 +26,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
 }
