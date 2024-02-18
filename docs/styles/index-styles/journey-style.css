@@ -16,6 +16,10 @@
     scroll-snap-type: y mandatory;
 }
 
+.hero {
+    scroll-snap-align: center;
+}
+
 .journey {
     width: 100%;
     max-width: var(--max-width);
@@ -28,3 +32,9 @@
     justify-content: center;
     scroll-snap-align: center;
 }
+
+.tunnel {
+    opacity: 0;
+    transition: 0.5s;
+}
+

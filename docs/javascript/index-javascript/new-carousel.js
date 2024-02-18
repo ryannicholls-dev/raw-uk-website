@@ -53,3 +53,17 @@ function showSlider(carouselType, type) {
         carouselDom.classList.remove('prev');
     }, timeRunning);
 }
+
+
+document.addEventListener('scroll', function(){
+    const clientHeight = document.documentElement.clientHeight;
+    const tunnelsSectionY = tunnels.getBoundingClientRect().y;
+    const clientThreeQuarter = clientHeight * 0.50;
+
+    const tunnelsSection = document.querySelector('.carousel.journey');
+    
+    if (clientThreeQuarter > tunnelsSectionY) {
+        tunnelsSection.style.opacity = 1;
+    }
+
+});
