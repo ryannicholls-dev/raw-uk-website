@@ -73,7 +73,7 @@ document.addEventListener('scroll', function(){
         thumbnail.style.animation = 'animation: showThumbnails 1s linear forwards';
     }
 
-    if (clientHeight * 0.10 > tunnelsSectionY) {
+    if (clientHeight * 0.20 > tunnelsSectionY) {
         thumbnail.style.animation = 'showThumbnails 1s linear forwards';
 
         chapter.style.animation = 'showContent 0.5s 1s linear 1 forwards';

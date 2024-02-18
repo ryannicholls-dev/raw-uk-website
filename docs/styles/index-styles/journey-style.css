@@ -28,5 +28,6 @@
 
 .tunnel {
     opacity: 0;
+    transition: 1s;
 }
 
