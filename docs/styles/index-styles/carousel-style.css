@@ -84,7 +84,7 @@
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 0.5s 1s linear 1 forwards;
+    /* animation: showContent 0.5s 1s linear 1 forwards; */
 }
 
 @keyframes showContent {
@@ -201,7 +201,7 @@
     z-index: 100;
     display: flex;
     gap: 20px;
-    opacity: 0.9;
+    opacity: 0;
 }
 
 .thumbnail .item {
@@ -231,6 +231,17 @@
 .thumbnail .item .content .title {
     font-family: 'RawFont';
     font-size: 2rem;
+}
+
+@keyframes showThumbnails {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Arrows */

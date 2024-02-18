@@ -60,10 +60,33 @@ document.addEventListener('scroll', function(){
     const tunnelsSectionY = tunnels.getBoundingClientRect().y;
     const clientThreeQuarter = clientHeight * 0.50;
 
-    const tunnelsSection = document.querySelector('.carousel.journey');
-    
+    const tunnelsSection = document.querySelector('.tunnel');
+    const thumbnail = document.querySelector('.thumbnail');
+
+    const chapter = document.querySelector('.chapter');
+    const title = document.querySelector('.title');
+    const description = document.querySelector('.description');
+    const buttons = document.querySelector('.buttons');
+
     if (clientThreeQuarter > tunnelsSectionY) {
         tunnelsSection.style.opacity = 1;
+        thumbnail.style.animation = 'animation: showThumbnails 1s linear forwards';
+    }
+
+    if (clientHeight * 0.10 > tunnelsSectionY) {
+        thumbnail.style.animation = 'showThumbnails 1s linear forwards';
+
+        chapter.style.animation = 'showContent 0.5s 1s linear 1 forwards';
+        chapter.style.animationDelay = '0.2s';
+
+        title.style.animation = 'showContent 0.5s 1s linear 1 forwards';
+        title.style.animationDelay = '0.4s';
+        
+        description.style.animation = 'showContent 0.5s 1s linear 1 forwards';
+        description.style.animationDelay = '0.6s';
+        
+        buttons.style.animation = 'showContent 0.5s 1s linear 1 forwards';
+        buttons.style.animationDelay = '0.8s';
     }
 
 });
