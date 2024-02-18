@@ -77,7 +77,7 @@
     z-index: 1;
 }
 
-.carousel .list .item:nth-child(1) .chapter, 
+/* .carousel .list .item:nth-child(1) .chapter, 
 .carousel .list .item:nth-child(1) .title, 
 .carousel .list .item:nth-child(1) .description,
 .carousel .list .item:nth-child(1) .buttons {
@@ -85,7 +85,7 @@
     filter: blur(20px);
     opacity: 0;
     animation: showContent 0.5s 1s linear 1 forwards;
-}
+} */
 
 @keyframes showContent {
     to {
@@ -142,7 +142,7 @@
     }
 }
 .carousel.next .thumbnail{
-    animation: effectNext .5s linear 1 forwards;
+    animation: effectNext 1s linear 1 forwards;
 }
 
 @keyframes effectNext{
