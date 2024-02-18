@@ -5,6 +5,10 @@ let tunnelPrev = document.getElementById('tunnel prev');
 let palmNext = document.getElementById('palm next');
 let palmPrev = document.getElementById('palm prev');
 
+let chapter = document.querySelector('.carousel .list .item:nth-child(1) .chapter');
+let title = document.querySelector('.carousel .list .item:nth-child(1) .title');
+let description = document.querySelector('.carousel .list .item:nth-child(1) .description');
+let buttons = document.querySelector('.carousel .list .item:nth-child(1) .buttons');
 
 let timeRunning = 1000;
 let timeAutoNext = 7000;
@@ -63,10 +67,11 @@ document.addEventListener('scroll', function(){
     const tunnelsSection = document.querySelector('.tunnel');
     const thumbnail = document.querySelector('.thumbnail');
 
-    const chapter = document.querySelector('.chapter');
-    const title = document.querySelector('.title');
-    const description = document.querySelector('.description');
-    const buttons = document.querySelector('.buttons');
+    chapter = document.querySelector('.carousel .list .item:nth-child(1) .chapter');
+    title = document.querySelector('.carousel .list .item:nth-child(1) .title');
+    description = document.querySelector('.carousel .list .item:nth-child(1) .description');
+    buttons = document.querySelector('.carousel .list .item:nth-child(1) .buttons');
+
 
     if (clientThreeQuarter > tunnelsSectionY) {
         tunnelsSection.style.opacity = 1;
