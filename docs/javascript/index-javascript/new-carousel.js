@@ -121,8 +121,8 @@ document.addEventListener('scroll', function(){
         thumbnail.style.animation = 'showThumbnails 1s linear forwards';
     }
 
-    setTimeout(() => {
-        thumbnail.style.animation = '';
-    }, 3000);
+    // setTimeout(() => {
+    //     thumbnail.style.animation = '';
+    // }, 3000);
 
 });
