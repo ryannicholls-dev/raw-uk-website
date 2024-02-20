@@ -8,7 +8,7 @@
     position: fixed;
     top: 4rem;
     transform-origin: left;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .scroll-tracker-background {
@@ -20,7 +20,7 @@
     top: 4rem;
     transform-origin: left;
     opacity: 0;
-    z-index: 100;
+    z-index: 1000;
     /* animation: revealTimeline 1s 1 linear ; */
 }
 
@@ -36,7 +36,7 @@ h1 {
     width: 100%;
     max-width: inherit;
     opacity: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .dates {

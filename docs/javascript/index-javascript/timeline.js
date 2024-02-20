@@ -9,13 +9,17 @@ const tunnels = document.querySelector('.tunnels');
 const controller = new ScrollMagic.Controller();
 const timelineAnim = TweenMax.fromTo(scrollTracker, 1, { transform: "scaleX(0)" }, { transform: "scaleX(1)" } );
 
+const timelineDuration = document.documentElement.clientHeight * 5;
+
+console.log(timelineDuration);
+
 const tl = new TimelineMax();
-let timelineDuration = isMobileDevice ? 4300 : 5500;
+
 
 const timelineScene = new ScrollMagic.Scene({
     duration: timelineDuration,
     triggerElement: tunnels,
-    triggerHook: 0.10
+    triggerHook: 0
 })
 .setTween(timelineAnim)
 .addTo(controller);
