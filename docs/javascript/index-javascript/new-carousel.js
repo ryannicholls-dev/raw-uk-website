@@ -5,6 +5,9 @@ let tunnelPrev = document.getElementById('tunnel prev');
 let palmNext = document.getElementById('palm next');
 let palmPrev = document.getElementById('palm prev');
 
+let bathNext = document.getElementById('bath next');
+let bathPrev = document.getElementById('bath prev');
+
 
 let timeRunning = 1000;
 let timeAutoNext = 7000;
@@ -25,6 +28,14 @@ palmNext.onclick = function() {
 
 palmPrev.onclick = function() {
     showSlider('palm', 'prev');    
+}
+
+bathNext.onclick = function() {
+    showSlider('bath', 'next');
+}
+
+bathPrev.onclick = function() {
+    showSlider('bath', 'prev');    
 }
 
 // Function to move slider to next or previous item
