@@ -28,5 +28,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
+/* 
+.hero {
+    scroll-snap-align: start;
+} */

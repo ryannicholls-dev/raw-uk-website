@@ -52,7 +52,7 @@ h1 {
 
 .navbar-custom {
     background-color: transparent;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .navbar-custom .navbar-brand {
@@ -82,6 +82,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 /* logo png */
