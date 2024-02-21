@@ -30,6 +30,11 @@
     justify-content: center;
     scroll-snap-align: start;
 }
+
+.tunnel {
+    opacity: 0;
+    transition: 1.5s;
+}
 /* 
 .hero {
     scroll-snap-align: start;

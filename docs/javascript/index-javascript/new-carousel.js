@@ -64,3 +64,20 @@ function showSlider(carouselType, type) {
         carouselDom.classList.remove('prev');
     }, timeRunning);
 }
+
+// Show sections on scroll
+document.addEventListener('scroll', function(){
+    const tunnels = document.querySelector('.carousel.tunnel');
+    const clientHeight = document.documentElement.clientHeight;
+    const tunnelsSectionY = tunnels.getBoundingClientRect().y;
+    const clientThreeQuarter = clientHeight * 0.50;
+
+    if (clientThreeQuarter > tunnelsSectionY) {
+        // console.log(clientHeight);
+        tunnels.style.opacity = 1;
+    }
+    else {
+        // console.log('false');
+        
+    }
+});
