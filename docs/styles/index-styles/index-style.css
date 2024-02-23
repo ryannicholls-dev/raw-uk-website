@@ -18,7 +18,8 @@
 
 :root {
     --neon-green: #33ff00;
-    --max-width: 1920px
+    --max-width: 1920px;
+    --animationTime: 0.5s;
 }
 
 body {
@@ -29,6 +30,67 @@ body {
     background-color: black;
     z-index: 500;
 }
+
+
+.raw-border {
+    position: relative;
+    background-color: red;
+    z-index: 2;
+}
+
+.top {
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateTop var(--animationTime) linear forwards;
+}
+
+@keyframes animateTop {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.right {
+    width: 5px;
+    height: 0%;
+    position: absolute;
+    right: 0;
+    animation: animateSides var(--animationTime) linear var(--animationTime) forwards;
+}
+
+@keyframes animateSides {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.bottom {
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: animateTop var(--animationTime) linear forwards;
+
+}
+
+.left {
+    width: 5px;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    animation: animateSides var(--animationTime) linear var(--animationTime) forwards;
+}
+
 
 .navbar-custom {
     max-width: var(--max-width);
@@ -67,7 +129,7 @@ h1 {
 }
 
 .navbar-custom .navbar-nav .nav-link:hover{
-    color: var(--neon-green);
+    color: red;
     transition: 0.5s;
 }
 
@@ -124,7 +186,7 @@ h1 {
 }
 
 .scroll-text a:hover {
-    color: var(--neon-green);
+    color: red;
     transition: color 0.5s ease;
 }
 
