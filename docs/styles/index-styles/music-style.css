@@ -13,3 +13,10 @@ h1 {
     left: 0;
     top: 80px;
 }
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.5rem; 
+        white-space: nowrap;
+    }
+}
