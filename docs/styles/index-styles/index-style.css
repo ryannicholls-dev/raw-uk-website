@@ -148,16 +148,32 @@ h1 {
 }
 
 /* logo png */
-.bg-img {
-    background-image: url('../../assets/logo_with_background.jpeg');
+/* .bg-img {
+    background-image: url('../../assets/white-raw-logo.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 70%;
+    background-position: center;
     box-shadow: 0 0 50px 30px black inset;
-    height: 70%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center 70%;
+    object-position: center;
+} */
+
+.bg-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    /* additional styling for the image */
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .hero h1,
@@ -243,5 +259,9 @@ h1 {
     }
     .news-ticker, .news-ticker-2 {
         font-size: 1rem;
+    }
+    .logo-img {
+        top: 50%;
+        max-width: 70%;
     }
 }
