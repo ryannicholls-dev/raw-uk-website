@@ -9,7 +9,7 @@ const tunnels = document.querySelector('.tunnels');
 const controller = new ScrollMagic.Controller();
 const timelineAnim = TweenMax.fromTo(scrollTracker, 1, { transform: "scaleX(0)" }, { transform: "scaleX(1)" } );
 
-const timelineDuration = document.documentElement.clientHeight * 5;
+const timelineDuration = document.documentElement.clientHeight * 6;
 
 console.log(timelineDuration);
 

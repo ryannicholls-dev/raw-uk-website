@@ -8,6 +8,9 @@ let palmPrev = document.getElementById('palm prev');
 let bathNext = document.getElementById('bath next');
 let bathPrev = document.getElementById('bath prev');
 
+let roofNext = document.getElementById('roof next');
+let roofPrev = document.getElementById('roof prev');
+
 
 let timeRunning = 1000;
 let timeAutoNext = 7000;
@@ -36,6 +39,14 @@ bathNext.onclick = function() {
 
 bathPrev.onclick = function() {
     showSlider('bath', 'prev');    
+}
+
+roofNext.onclick = function() {
+    showSlider('roof', 'next');
+}
+
+roofPrev.onclick = function() {
+    showSlider('roof', 'prev');    
 }
 
 // Function to move slider to next or previous item
