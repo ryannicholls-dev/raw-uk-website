@@ -47,7 +47,7 @@
 .carousel .list .item .description {
     font-family: 'Inria Sans';
     text-align: justify;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Horizontal offset, vertical offset, blur radius, shadow color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Horizontal offset, vertical offset, blur radius, shadow color */
 }
 
 .carousel .list .item .content .buttons {
